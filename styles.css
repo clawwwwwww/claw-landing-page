@@ -1,12 +1,14 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
 }
 
 /*div {
     border: 1px solid #000000;
 }*/
 
-.header {
+.header,
+.footer {
     display: flex;
     background-color: #1F2937;
     color:  #FFFFFF;
@@ -36,14 +38,15 @@ li {
     background-color: #1F2937;
     color:  #FFFFFF;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
+    padding: 16px 150px;
+    gap: 100px;
 }
 
 .hero .text {
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 200px;
+    padding: 0;
     align-items: flex-start;
 }
 
@@ -71,10 +74,10 @@ h3 {
 h4 {
     font-size: 18px;
     font-weight: 600;
+    margin-bottom: 0;
 }
 
 .main {
-
     display: block;
     text-align: center;
 }
@@ -84,11 +87,13 @@ h4 {
     justify-content: center;
     align-content: flex-start;
     padding: 16px;
+    margin: 16px;
  }
 
  .info {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
  }
 
  .module {
@@ -96,8 +101,23 @@ h4 {
     height: 100px;
     border: 3px solid #3882f6;
     border-radius: 10px;
-    margin: 15px;
- }
+    margin: 8px;
+}
+
+.subtitle {
+    justify-content: center;
+    text-align: center;
+}
+
+.group {
+    margin: 15px 15px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 125px;
+    font-size: 12px;
+}
 
  button {
     background-color: #3882f6;
@@ -132,16 +152,20 @@ h4 {
  }
 
  .submain {
-    padding: 84px 200px;
+    justify-content: center;
+    align-content: center;
+    padding: 48px 240px;
 
  }
 .call {
     border-radius: 10px;
     background-color: #3882f6;
-    padding: 10px;
+    padding: 8px 24px;
     color: white;
     text-align: left;
-    display: inline block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
  }
 
  .footer {
@@ -152,10 +176,9 @@ h4 {
 
  .call button {
     border: 1px solid white;
-    margin-right: 200px;
  }
 
- .call p {
+ .call .text {
     font-weight: 200;
-    margin-top: -20px;
+    width: 200px;
  }
